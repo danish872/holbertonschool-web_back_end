@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Contains a function with annotated parameters and
-return values with appropriate types."""
-from typing import Iterable, Sequence, List, Tuple
+
+""" Module for element_length function """
 
 
-def element_length(lst: Iterable[Sequence]
-        ) -> List[Tuple[Sequence, int]]:
-    """Returns a list of tuples with the length of each element"""
+from typing import List, Tuple, Iterable, Sequence
+
+
+def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
+    """ returns a list of tuples with the length
+  of each element in the input list """
     return [(i, len(i)) for i in lst]
